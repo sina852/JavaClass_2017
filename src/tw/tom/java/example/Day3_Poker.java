@@ -5,6 +5,7 @@ public class Day3_Poker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//洗牌=>poker[]
+		long start = System.currentTimeMillis();
 		int [] poker= new int[52];
 		for(int i=0;i<poker.length;i++) 
 		{
@@ -22,14 +23,16 @@ public class Day3_Poker {
 			if(isR) 
 			{
 				i--;
-				continue;
+				continue; //以下不做
 			}else 
 			{	
 				poker[i]=temp;
 				System.out.println(poker[i]);
-			}	
+			}
+
 		}
-		
+		System.out.println("===============");
+		System.out.println(System.currentTimeMillis() - start);
 		
 		
 		
