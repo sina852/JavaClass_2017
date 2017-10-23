@@ -8,12 +8,12 @@ public class Day3_Porker3 {
 		// TODO Auto-generated method stub
 		
 		// 洗牌 => poker[]
-				long start = System.currentTimeMillis();
-				int[] poker = new int[52];	// 0, 0, ... 0
+				long start = System.currentTimeMillis();        //設定計時開始時間
+				int[] poker = new int[52];	// 0, 0, ... 0      //宣告52個數值陣列
 				for (int i=0; i<poker.length; i++) poker[i] = i;
 				
 				for (int i=0; i<poker.length; i++) {
-					int pos = (int)(Math.random()*(poker.length-i));	// 0 - 5
+					int pos = (int)(Math.random()*(poker.length-i));	// 0 - 51
 					
 					// swap
 					int temp = poker[pos];
