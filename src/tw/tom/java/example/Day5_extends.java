@@ -25,7 +25,7 @@ class Tom2 extends Tom1
 	@Override
 		void m1() {
 			// TODO Auto-generated method stub
-			super.m1();
+			super.m1();                         //先做爸爸的,在做自己的
 			System.out.println("Tom2:m1()");
 		}
 	
