@@ -4,13 +4,23 @@ public class Day5_class {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		tom261 obj1 = new tom261(1200000000);
+		tom261 obj1 = new tom261();
+		
+		System.out.println(tom261.count);
+		tom261.call();
 	}
 
 }
 
 class tom261
 {
+	static int count;
+	
+	static void call() 
+	{
+		System.out.println("11111");
+	}
+	
   tom261()
   {
 	  System.out.println("tom261()");
