@@ -1,0 +1,3 @@
+Hello! World
+TOM Welcome!
+JAVA OutPut OK!中文

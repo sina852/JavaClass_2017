@@ -8,10 +8,22 @@ public class TW_ID {
 	{
 		this((int)(Math.random()*2)==0);
 	}
-	public TW_ID(String id) 
+	private TW_ID(String id) 
 	{
 		this.id=id;
 	}
+	
+	public static TW_ID createTWID(String id) 
+	{
+		if(isRight(id)) 
+		{
+			return new TW_ID(id);
+		}else 
+		{
+			return null;
+		}
+	} 
+	
 	public TW_ID(boolean isMale) 
 	{
 		this(isMale, (int)(Math.random()*26));
